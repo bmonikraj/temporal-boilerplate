@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "f547b05c-08eb-4211-8a45-af8e35fe3994",
+		"name": "TEMPORAL-BOILERPLATE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MoneyTransfer Initiate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromAccount\": \"1001\",\r\n    \"toAccount\": \"1002\",\r\n    \"amount\": 105.80\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:10005/money-transfer/initiate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10005",
+					"path": [
+						"money-transfer",
+						"initiate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
